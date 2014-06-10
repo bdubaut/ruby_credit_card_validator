@@ -1,0 +1,5 @@
+require "app/credit_card"
+require "app/amex"
+require "app/visa"
+require "app/discover"
+require "app/mastercard"
