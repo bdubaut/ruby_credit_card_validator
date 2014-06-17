@@ -14,6 +14,12 @@ class CreditCard
 	}
 	end
 
+	#
+	# Checks if the credit card number is valid
+	#
+	#
+	# @return [Boolean]
+	#
 	def check_luhn
 	  s1 = 0
 	  s2 = 0
@@ -26,6 +32,13 @@ class CreditCard
 	  (s1 + s2) % 10 == 0
 	end
 
+	#
+
+	# Returns the type and luhn validity of the credit card
+	#
+	#
+	# @return [String]
+	#
 	def get_card_type
 		self.ccnumber = self.ccnumber.strip.delete(' ')
 		case self.ccnumber
